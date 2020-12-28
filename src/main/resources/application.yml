@@ -1,0 +1,20 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8000
+  servlet:
+    context-path: /note
+
+spring:
+  # ActiveMQ 设置服务器地址 账号以及密码
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+  # ActiveMQ 设置队列还是主题
+  jms:
+    pub-sub-domain: false     # false: Queue队列（默认）  true: Topic主题
+# ActiveMQ 自己定义队列名称
+myqueue: boot-activemq-queue
