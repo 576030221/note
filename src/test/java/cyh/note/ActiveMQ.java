@@ -19,7 +19,7 @@ public class ActiveMQ {
 
     @Test
     public void testSend() throws Exception{
-        d队列Service.produceMsg();
+        d队列Service.生产一次普通队列消息();
     }
 
 }

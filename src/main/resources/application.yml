@@ -15,6 +15,14 @@ spring:
     password: admin
   # ActiveMQ 设置队列还是主题
   jms:
-    pub-sub-domain: false     # false: Queue队列（默认）  true: Topic主题
-# ActiveMQ 自己定义队列名称
-myqueue: boot-activemq-queue
+    pub-sub-domain: false     # false: Queue队列（默认）  true: Topic主题  影响监听器的启用，启用队列的监听器还是主题的监听器？
+
+
+
+
+
+
+
+# ActiveMQ 自己定义队列名称、自定义主题名称
+myActiveQueue: boot-activemq-queue
+myActiveTopic: boot-activemq-topic
