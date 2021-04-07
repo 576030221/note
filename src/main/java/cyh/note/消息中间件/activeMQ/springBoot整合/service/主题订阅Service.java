@@ -23,7 +23,7 @@ public class 主题订阅Service {
     @Autowired
     private Topic activeMqTopic;
 
-    @Scheduled(fixedDelay = 3000)
+//    @Scheduled(fixedDelay = 3000)
     public void 主题生产者(){
         String substring = UUID.randomUUID().toString().substring(0, 6);
         System.out.println("ActiveMQ 主题 定时发送主题消息：" + substring);
